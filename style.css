@@ -363,7 +363,7 @@ ul{
     margin: 10px;
 }
 
-@media (max-width:360px) {
+@media (max-width:700px) {
     
     #navbar{
         display: none;
