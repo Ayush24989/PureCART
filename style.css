@@ -321,12 +321,21 @@ ul{
 .shop-now{
     display: block;
     color: black;
-    border: 2px solid black;
-    margin: 9px auto;
+    font-weight: 700;
+    font-family: 'Lato';
+    font-size: 18px;
+    box-sizing: border-box;
+    padding:11px 120px;
     border-radius: 16px;
+    border: 2px solid black;
+    margin: 10px auto;
 }
 .shop-now:hover{
-    background: rgb(155, 155, 155);
+    color: white;
+    cursor: pointer;
+    background: #f44336;
+    
+    
 }
 .shop-now a {
     text-decoration: none;
@@ -351,7 +360,23 @@ ul{
 
 }
 
+.search-box input:focus{
+    outline: none;
+}
 
+#menu{
+    display: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    position: absolute;
+    top: 13px;
+    left: 326px;
+    font-size: 32px
+}
+.diff-products h2{
+     font-family: 'Lato', sans-serif;
+}
 /* css of products page:  */
 
 #products-body{
@@ -359,28 +384,37 @@ ul{
 }
 
 .diff-products{
-    background-color: grey;
-    margin: 10px;
+    background-color: rgb(150 150 150 / 55%);
+    margin: 67px 24px;
+    height: 100%;
+    padding: 114px 0px 114px 401px;
+    line-height: 46px;
+    box-sizing: border-box
 }
 
 @media (max-width:700px) {
-    
-    #navbar{
+    #navbar::before{
+        height: 9%;
+    }
+    .login{
         display: none;
+    }
+    #navbar ul {
+        display:none; 
     }
     .products-column{
         flex-direction: column;
         
     }
     .products-cards{
-        margin: 10px auto;
+        margin: 10px 15px;
     }
     
     .h-primary h1{
         font-size: 1.4rem ;
     }
     .h-primary{
-        margin: 100px auto;
+        margin: 60px auto;
     }
     .h-primary p{
         font-size: .6rem;
@@ -392,14 +426,31 @@ ul{
         display: none;
     }
     .h-primary::before{
-        height: 50%;
+        height: 40%;
     }
     .products h1{
         font-size: 2.2rem;
     }
     .products{
-        margin: 60px 0px 40px 0px;
+        margin: 40px 0px 40px 0px;
     }
 
+    #menu{
+        display: block;
+    }
+    .search-box input{
+        width: 110%;
+        height: 90%;
+        left: -14px;
+        top: 9px;
+        padding: 0px 14px;
+        font-size: 13px;
+    }
+    #search{
+        right: -61px;
+        top: 8px;
+        font-size: 20px;
+        font-weight: 600;
+    }
     
 }
